@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 60 30% 98%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 60 30% 98%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 60 30% 98%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 220 90% 56%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 46 65% 52%;
+    --primary-foreground: 60 30% 98%;
 
-    --secondary: 240 5.9% 96.1%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 0 73% 37%;
+    --secondary-foreground: 60 30% 98%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 46 30% 90%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 46 30% 90%;
+    --accent-foreground: 0 0% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 60 30% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
+    --border: 46 30% 85%;
+    --input: 46 30% 85%;
+    --ring: 46 65% 52%;
     --radius: 12px;
   }
 
@@ -61,7 +61,7 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/80 backdrop-blur-md border border-white/20;
+    @apply bg-roman-ivory/80 backdrop-blur-md border border-roman-gold/20;
   }
   
   .text-balance {
@@ -71,7 +71,7 @@
 
 @layer components {
   .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-roman-gold/50 focus-visible:ring-offset-2;
   }
 
   .clip-text {

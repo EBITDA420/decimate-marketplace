@@ -14,9 +14,9 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-50 px-6">
+    <div className="min-h-screen flex items-center justify-center bg-roman-ivory px-6">
       <div className="text-center max-w-md">
-        <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center text-primary mb-6 mx-auto">
+        <div className="bg-roman-gold/10 w-16 h-16 rounded-full flex items-center justify-center text-roman-gold mb-6 mx-auto">
           <span className="text-2xl font-bold">404</span>
         </div>
         
@@ -28,7 +28,7 @@ const NotFound = () => {
         
         <a 
           href="/" 
-          className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-white font-medium hover:bg-primary/90 transition-colors focus-ring"
+          className="inline-flex items-center px-6 py-3 rounded-full bg-roman-red text-roman-ivory font-medium hover:bg-roman-red/90 transition-colors focus-ring"
         >
           <ArrowLeft className="mr-2 w-4 h-4" />
           Back to home

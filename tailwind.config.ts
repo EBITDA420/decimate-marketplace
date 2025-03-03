@@ -66,6 +66,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				roman: {
+					gold: '#D4AF37',
+					red: '#9B2335',
+					ivory: '#FFFFF0',
 				}
 			},
 			borderRadius: {

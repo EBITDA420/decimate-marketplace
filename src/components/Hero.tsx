@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -inset-[10%] opacity-20">
           <div 
-            className="w-full h-full bg-gradient-to-r from-blue-600/30 via-violet-600/30 to-emerald-600/30 animate-pulse-subtle rounded-full blur-3xl" 
+            className="w-full h-full bg-gradient-to-r from-roman-red/30 via-roman-gold/30 to-roman-ivory/40 animate-pulse-subtle rounded-full blur-3xl" 
             style={{ animationDuration: '8s' }}
           />
         </div>
@@ -49,7 +49,7 @@ const Hero = () => {
       <div className="container max-w-5xl mx-auto text-center">
         <div className="space-y-3 mb-6">
           <span 
-            className={`inline-block px-4 py-1.5 text-xs font-medium bg-primary/10 text-primary rounded-full transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-4'}`}
+            className={`inline-block px-4 py-1.5 text-xs font-medium bg-roman-gold/10 text-roman-gold rounded-full transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-4'}`}
           >
             Challenging Industry Monopolies
           </span>
@@ -59,7 +59,7 @@ const Hero = () => {
           className={`text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}
         >
           <span className="block">Decimate the Giants.</span>
-          <span className="block text-primary">Build the Future.</span>
+          <span className="block text-roman-red">Build the Future.</span>
         </h1>
         
         <p 
@@ -71,14 +71,14 @@ const Hero = () => {
         <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
           <a 
             href="#industries" 
-            className="px-8 py-4 rounded-full bg-primary text-white font-medium text-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:translate-y-[-2px] transition-all focus-ring w-full sm:w-auto"
+            className="px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring w-full sm:w-auto"
           >
             Explore Industries
           </a>
           
           <a 
             href="#about" 
-            className="px-8 py-4 rounded-full bg-white border border-neutral-200 text-neutral-800 font-medium text-lg hover:bg-neutral-50 transition-colors focus-ring w-full sm:w-auto"
+            className="px-8 py-4 rounded-full bg-roman-ivory border border-roman-gold/30 text-foreground font-medium text-lg hover:bg-roman-gold/5 transition-colors focus-ring w-full sm:w-auto"
           >
             Learn More
           </a>
@@ -91,7 +91,7 @@ const Hero = () => {
       >
         <a 
           href="#industries" 
-          className="flex flex-col items-center justify-center text-neutral-400 hover:text-primary transition-colors"
+          className="flex flex-col items-center justify-center text-roman-gold hover:text-roman-red transition-colors"
           aria-label="Scroll down"
         >
           <span className="text-sm font-medium mb-2">Scroll</span>
