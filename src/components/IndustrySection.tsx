@@ -182,7 +182,7 @@ const IndustrySection = () => {
               isVisible ? "opacity-100" : "opacity-0 translate-y-4"
             )}
           >
-            Industries Ready for Change
+            Our Hitlist
           </h2>
           
           <p 
@@ -191,7 +191,7 @@ const IndustrySection = () => {
               isVisible ? "opacity-100" : "opacity-0 translate-y-4"
             )}
           >
-            Select an industry you'd like to see disrupted. We're gathering support to enable new entrepreneurs to challenge the status quo.
+            Our leaderboard of industries that need more competition.
           </p>
         </div>
         
