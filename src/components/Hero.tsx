@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 
@@ -65,7 +64,7 @@ const Hero = () => {
         <p 
           className={`text-xl text-neutral-600 max-w-2xl mx-auto mb-10 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-8'}`}
         >
-          Join a community of supporters ready to back entrepreneurs challenging consolidated markets. When we reach 1 million supporters for an industry, we enable new businesses to launch with momentum.
+          Reallocating $100 billion into the hands of consumers
         </p>
         
         <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
