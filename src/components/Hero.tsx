@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 
@@ -50,7 +51,7 @@ const Hero = () => {
           <span 
             className={`inline-block px-4 py-1.5 text-xs font-medium bg-roman-gold/10 text-roman-gold rounded-full transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-4'}`}
           >
-            Challenging Industry Monopolies
+            Igniting the largest redistribution of wealth in human history
           </span>
         </div>
         
@@ -72,7 +73,7 @@ const Hero = () => {
             href="#industries" 
             className="px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring w-full sm:w-auto"
           >
-            Explore Industries
+            Decimate an Industry
           </a>
           
           <a 

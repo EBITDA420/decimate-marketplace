@@ -44,10 +44,10 @@ const Header = () => {
         </nav>
         
         <a 
-          href="#signup" 
+          href="#industries" 
           className="px-5 py-2 rounded-full bg-roman-red text-roman-ivory text-sm font-medium hover:bg-roman-red/90 transition-colors focus-ring"
         >
-          Get Started
+          Decimate an Industry
         </a>
       </div>
     </header>
