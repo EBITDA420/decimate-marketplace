@@ -68,19 +68,12 @@ const Hero = () => {
           Reallocating $100 billion into the hands of consumers
         </p>
         
-        <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
+        <div className={`flex justify-center transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
           <a 
             href="#industries" 
-            className="px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring w-full sm:w-auto"
+            className="px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring"
           >
             Decimate an Industry
-          </a>
-          
-          <a 
-            href="#about" 
-            className="px-8 py-4 rounded-full bg-roman-ivory border border-roman-gold/30 text-foreground font-medium text-lg hover:bg-roman-gold/5 transition-colors focus-ring w-full sm:w-auto"
-          >
-            Learn More
           </a>
         </div>
       </div>
