@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Check, Mail, Phone } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Mail, Phone, Info } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -10,6 +10,37 @@ import Footer from "@/components/Footer";
 import { industries } from "@/components/IndustrySection";
 
 type SignupStep = "select" | "contact" | "verify" | "complete";
+
+// Industry explainer content
+const industryExplainers: Record<string, string> = {
+  "health-insurance": `It is difficult for new companies to launch in the health insurance space because they need a lot of customers to spread out the risk of each of their clients. This network risk has resulted in a gradual consolidation in the health insurance industry.
+
+The industry is consolidated into 6 major providers owning 50% of the market. The largest health insurance company currently has a $400 billion market cap.`,
+
+  "social-media": `Social media networks are difficult to launch because the value provided by them is primarily driven by network effects. New players don't have enough users to compete with the networks of established providers.
+
+This is one of the most consolidated industries in North America with the largest player being worth $1.6 trillion.`,
+
+  "search-engines": `Search engines rely on strong brand presence and recognition to be used. Once someone has a default search engine it is rare for them to switch.
+
+This has resulted in a $2.2 trillion company in the search industry.`,
+
+  "ecommerce": `Trust and brand recognition is incredibly important in eCommerce because consumers want to feel secure when purchasing from an online store. This results in consumers defaulting to a few trusted marketplaces when making online purchases.
+
+This has consolidated the eCommerce industry into a few major players with the largest owning almost 40% of all eCommerce purchases in the United States contributing towards a $2.1 trillion market cap.`,
+
+  "cities": `Similar to internet products, cities also see massive network effects because people want to live with and around other people.
+
+This results in a very slow process by which towns will gradually grow into cities. Because cities start off as towns, often times their infrastructure does not scale up well as the city grows.
+
+This has resulted in a few major hubs that have extremely high demand for real estate. The total real estate value of the most expensive city in North America is New York at $2.8 trillion.
+
+We're looking to help developers create new cities with the infrastructure and scaling necessary for them to become major cities in the future.`,
+
+  "computer-hardware": `Computer parts are expensive purchases which cause consumers to not want to take risks trusting new brands.
+
+This has led towards a $2.8 trillion company in the semiconductor industry.`
+};
 
 const IndustrySignup = () => {
   const navigate = useNavigate();
@@ -125,15 +156,31 @@ const IndustrySignup = () => {
           {/* Step 2: Contact Information */}
           {currentStep === "contact" && selectedIndustry && (
             <div className="space-y-8">
-              <div className="text-center mb-10">
+              <div className="text-center mb-6">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">Join the Movement</h1>
                 <p className="text-xl text-neutral-600 mb-2">
                   You've selected <span className="font-medium text-roman-red">{selectedIndustry.name}</span>
                 </p>
-                <p className="text-neutral-600">
-                  Leave your contact information to verify your support
-                </p>
               </div>
+              
+              {/* Industry explainer */}
+              {selectedIndustry && industryExplainers[selectedIndustry.id] && (
+                <div className="bg-neutral-50 border border-neutral-200 rounded-xl p-6 mb-8">
+                  <div className="flex items-start">
+                    <Info className="w-5 h-5 text-roman-red mt-1 mr-3 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Why this industry needs change:</h3>
+                      <div className="text-neutral-700 space-y-2 whitespace-pre-line">
+                        {industryExplainers[selectedIndustry.id]}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              <p className="text-center text-neutral-600 mb-6">
+                Leave your contact information to verify your support
+              </p>
               
               <form onSubmit={handleContactSubmit} className="space-y-6 max-w-md mx-auto">
                 <div className="space-y-2">
