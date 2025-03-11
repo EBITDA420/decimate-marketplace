@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { industries } from "@/components/IndustrySection";
+import IndustryVisualizer from "@/components/IndustryVisualizer";
 
 type SignupStep = "select" | "contact" | "verify" | "complete";
 
@@ -163,16 +164,19 @@ const IndustrySignup = () => {
                 </p>
               </div>
               
-              {/* Industry explainer */}
+              {/* Industry explainer with visualization */}
               {selectedIndustry && industryExplainers[selectedIndustry.id] && (
                 <div className="bg-neutral-50 border border-neutral-200 rounded-xl p-6 mb-8">
                   <div className="flex items-start">
                     <Info className="w-5 h-5 text-roman-red mt-1 mr-3 flex-shrink-0" />
-                    <div>
+                    <div className="w-full">
                       <h3 className="text-lg font-semibold mb-2">Why this industry needs change:</h3>
                       <div className="text-neutral-700 space-y-2 whitespace-pre-line">
                         {industryExplainers[selectedIndustry.id]}
                       </div>
+                      
+                      {/* Add the visualization component */}
+                      <IndustryVisualizer industryId={selectedIndustry.id} />
                     </div>
                   </div>
                 </div>
