@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,12 +25,12 @@ const Header = () => {
       )}
     >
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
-        <a 
-          href="/" 
+        <Link 
+          to="/" 
           className="text-2xl font-bold tracking-tight transition-opacity hover:opacity-80"
         >
           decimate
-        </a>
+        </Link>
         
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#industries" className="text-sm font-medium text-foreground hover:text-roman-red transition-colors">
@@ -38,17 +39,17 @@ const Header = () => {
           <a href="#about" className="text-sm font-medium text-foreground hover:text-roman-red transition-colors">
             About
           </a>
-          <a href="#signup" className="text-sm font-medium text-foreground hover:text-roman-red transition-colors">
+          <Link to="/industry-signup" className="text-sm font-medium text-foreground hover:text-roman-red transition-colors">
             Join
-          </a>
+          </Link>
         </nav>
         
-        <a 
-          href="#industries" 
+        <Link 
+          to="/industry-signup" 
           className="px-5 py-2 rounded-full bg-roman-red text-roman-ivory text-sm font-medium hover:bg-roman-red/90 transition-colors focus-ring"
         >
           Decimate an Industry
-        </a>
+        </Link>
       </div>
     </header>
   );

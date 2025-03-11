@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -69,12 +70,12 @@ const Hero = () => {
         </p>
         
         <div className={`flex justify-center transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
-          <a 
-            href="#industries" 
+          <Link 
+            to="/industry-signup" 
             className="px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring"
           >
             Decimate an Industry
-          </a>
+          </Link>
         </div>
       </div>
       

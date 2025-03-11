@@ -2,8 +2,9 @@
 import { useState, useEffect, useRef } from "react";
 import { Briefcase, ShoppingCart, Share2, Building, Search, Cpu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
-interface Industry {
+export interface Industry {
   id: string;
   name: string;
   description: string;
@@ -12,7 +13,7 @@ interface Industry {
   target: number;
 }
 
-const industries: Industry[] = [
+export const industries: Industry[] = [
   {
     id: "health-insurance",
     name: "Health Insurance",
@@ -203,6 +204,15 @@ const IndustrySection = () => {
               index={index} 
             />
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Link
+            to="/industry-signup"
+            className="inline-block px-8 py-4 rounded-full bg-roman-red text-roman-ivory font-medium text-lg shadow-lg shadow-roman-red/20 hover:shadow-xl hover:shadow-roman-red/30 hover:translate-y-[-2px] transition-all focus-ring"
+          >
+            Decimate an Industry
+          </Link>
         </div>
       </div>
     </section>
